@@ -24,7 +24,7 @@ export class App extends Component {
     const savedContacts = window.localStorage.getItem(storageKey);
     if (savedContacts !== null) {
       this.setState({
-        filters: JSON.parse(savedContacts),
+        contacts: JSON.parse(savedContacts),
       });
     }
   }
